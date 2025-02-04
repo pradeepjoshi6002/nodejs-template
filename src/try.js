@@ -1,1 +1,1 @@
-console.log("this is trial file")
+console.log('this is trial file');
