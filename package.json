@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "lint-staged": {
-    "*": "npm run lint:fix && npm run format:fix"
+    "*": [
+      "npm run format:fix",
+      "npm run lint:fix"
+    ]
   },
   "scripts": {
     "dev": "node src/server.js",
