@@ -1,7 +1,3 @@
-import fs from 'fs';
+import { Config } from './config';
 
-fs.writeFile('./src/try.js', 'console.log("this is trial file")', (err) => {
-  if (err) {
-    console.error(err?.message);
-  }
-});
+console.log(Config.PORT, Config.NODE_ENV);
