@@ -1,0 +1,12 @@
+sudo docker build -t auth-service:dev -f docker/dev/Dockerfile .
+
+docker image ls
+
+docker run --rm -it -v $(pwd):/home/pradeep/Desktop/app/backend -v /home/pradeep/Desktop/app/backend/node_modules --env-file $(pwd)/.env -p 5501:5501 -e NODE_ENV=development auth-service:de
+
+
+docker rmi <img_name:tag>
+
+docker ps
+
+docker stop <docker_id>
