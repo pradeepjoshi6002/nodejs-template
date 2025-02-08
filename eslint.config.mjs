@@ -13,9 +13,10 @@ export default tseslint.config(
     },
     rules: {
       'no-console': 'warn',
+      '@typescript-eslint/no-misused-promises': 'off',
     },
   },
   {
-    ignores: ['dist', 'node_modules', 'eslint.config.mjs'],
+    ignores: ['dist', 'node_modules', 'eslint.config.mjs', 'jest.config.js'],
   },
 );

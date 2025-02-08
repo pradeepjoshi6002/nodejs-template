@@ -8,7 +8,6 @@ app.get('/', (req, res) => {
   res.json({ msg: 'this is my app' });
 });
 
- 
 app.get('/error', (req: Request, res: Response, next: NextFunction) => {
   const err = createHttpError(401, 'access denied');
   next(err);
